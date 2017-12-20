@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PluginBleTest"
+    x:Class="PluginBleTest.PeripheralsPage">
+    <ContentPage.Padding >
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <ListView x:Name="ListView1" HasUnevenRows="true" ItemSelected="ListView1_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <StackLayout>
+                                <Label Text="{Binding Name, StringFormat='Name:{0}'}" FontAttributes="Bold"/>
+                            </StackLayout>
+                            <StackLayout Padding="10,0,0,0">
+                                <Label Text="{Binding Id, StringFormat='ID:{0}'}" />
+                                <Label Text="{Binding Rssi, StringFormat='RSSI:{0}'}" />
+                                <Label Text="{Binding State, StringFormat='State:{0}'}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
