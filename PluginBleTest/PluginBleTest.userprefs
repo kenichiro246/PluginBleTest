@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{2AF5534A-DD7D-409C-84AB-BF091A2E041B}|Default">
+  <MonoDevelop.Ide.ItemProperties.PluginBleTest.Droid PreferredExecutionTarget="Android.01a411698a80aff3" />
+  <MonoDevelop.Ide.ItemProperties.PluginBleTest HideGettingStarted="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PluginBleTest/PeripheralsPage.xaml.cs">
+    <Files>
+      <File FileName="PluginBleTest/PeripheralsPage.xaml.cs" Line="37" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.PluginBleTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.15FA6929-09AF-4F39-8D01-F2C474F29CB2" automaticSigning="False" />
+</Properties>

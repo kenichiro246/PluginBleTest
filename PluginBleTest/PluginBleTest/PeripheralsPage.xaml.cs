@@ -24,8 +24,26 @@ namespace PluginBleTest
             {
                 _deviceList.Add(e.Device);
             };
+            _Adapter.ScanTimeoutElapsed += (s, e) =>
+            {
+                foreach (var device in _Adapter.ConnectedDevices)
+                {
+                    _deviceList.Add(device);
+                }
+            };
             ListView1.ItemsSource = _deviceList;
             AddSearchButton();
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            var devices = _Adapter.ConnectedDevices;
+            foreach (var device in devices)
+            {
+                await _Adapter.DisconnectDeviceAsync(device);
+            }
         }
 
         private void AddSearchButton()
